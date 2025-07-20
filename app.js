@@ -13,7 +13,7 @@ let fuse; // Declare fuse globally or pass it around
 function setupSearch(data) {
   fuse = new Fuse(data, {
     keys: ["title"],
-    threshold: 0.4
+    threshold: 0.1
   });
 
   const searchInput = document.getElementById("searchInput");
